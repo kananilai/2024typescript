@@ -15,3 +15,4 @@ function generateError(message: string, code: number): never { //void型は戻�
 
 const result = generateError('An error occurred!', 500);
 console.log(result);
+
