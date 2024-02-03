@@ -35,3 +35,6 @@ for (const hobby of person.hobbies) {
 if (person.role === Role.ADMIN) {
   console.log("管理者");
 }
+
+console.log(Role.ADMIN);
+
