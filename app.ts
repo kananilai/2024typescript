@@ -1,1 +1,9 @@
-console.log('ここにコードを追加します。');
+function add(n1:number, n2:number) {
+  return n1 + n2;
+}
+
+const number1:number = 5;
+const number2:number = 2.8;
+
+const result:number = add(number1, number2);
+console.log(result);
