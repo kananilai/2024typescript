@@ -1,17 +1,13 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Max';
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-function printResult2(num) {
-    console.log("Result: " + num);
+// userName = userInput;//userInoutがstring型である保証がないためエラーが発生する
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
-var combineValues;
-combineValues = add;
-console.log(combineValues(8, 8));
-printResult2(add(5, 12));
+var result = generateError('An error occurred!', 500);
+console.log(result);
